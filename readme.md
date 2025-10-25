@@ -54,6 +54,7 @@ Download onnx from huggingface and build engine, save models dir.
 ```bash
 python -m pip install -r export_trt.py
 ```
+> **Note:** Replace `<your path>` with your actual folder path (e.g., `D:\ai`).
 
 ## 💼 Installation for Portable Environment
 Navigate to the `/ComfyUI/custom_nodes` directory
@@ -76,7 +77,6 @@ Download onnx from huggingface and build engine, save models dir.
 ```bash
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -u export_trt.py
 ```
-
 > **Note:** Replace `<your path>` with your actual folder path (e.g., `D:\ai`).
 
 ## ☀️ Usage
