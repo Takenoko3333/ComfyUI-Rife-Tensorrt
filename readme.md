@@ -2,9 +2,9 @@
 
 # ComfyUI Rife TensorRT ⚡
 
-[![python](https://img.shields.io/badge/python-3.10.12-green)](https://www.python.org/downloads/release/python-31012/)
-[![cuda](https://img.shields.io/badge/cuda-12.4-green)](https://developer.nvidia.com/cuda-downloads)
-[![trt](https://img.shields.io/badge/TRT-10.4.0-green)](https://developer.nvidia.com/tensorrt)
+[![python](https://img.shields.io/badge/python-3.11.6-green)](https://www.python.org/downloads/release/python-3116/)
+[![cuda](https://img.shields.io/badge/cuda-12.8-green)](https://developer.nvidia.com/cuda-downloads)
+[![trt](https://img.shields.io/badge/TRT-10.12.0.36-green)](https://developer.nvidia.com/tensorrt)
 [![by-nc-sa/4.0](https://img.shields.io/badge/license-CC--BY--NC--SA--4.0-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
 
 ![node](https://github.com/user-attachments/assets/5fd6d529-300c-42a5-b9cf-46e031f0bcb5)
@@ -30,26 +30,52 @@ _Note: The following results were benchmarked on FP16 engines inside ComfyUI, us
 |  H100  | rife49_ensemble_True_scale_1_sim | 512 x 512  | 4 | 57 |
 |  H100  | rife49_ensemble_True_scale_1_sim | 1280 x 1280  | 2 | 21 |
 
-## 🚀 Installation
-
+## 🚀 Installation for venv Environment
 Navigate to the ComfyUI `/custom_nodes` directory
 
 ```bash
-git clone https://github.com/yuvraj108c/ComfyUI-Rife-Tensorrt
-cd ./ComfyUI-Rife-Tensorrt
-pip install -r requirements.txt
+git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt
+```
+venv activate first
+
+```bash
+<your path>\ComfyUI\venv\Scripts\activate
+cd .\custom_nodes\ComfyUI-Rife-Tensorrt
+python -m pip install -r requirements.txt
+```
+Some environments (especially portable) may fail automatic install.  
+In that case, follow the manual installation commands below.
+```bash
+python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
+python -m pip install cuda-python==12.8.0
+```
+Building Tensorrt Engine
+Download onnx from huggingface and build engine, save models dir.
+```bash
+python -m pip install -r export_trt.py
 ```
 
-## 🛠️ Building Tensorrt Engine
+## 💼 Installation for Portable Environment
+```bash
+git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt
+```
+```bash
+cd .\ComfyUI-Rife-Tensorrt
+<your path>\ComfyUI_windows_portable\ComfyUI\python_embeded\python.exe -m pip install -r requirements.txt
+```
+Some environments (especially portable) may fail automatic install.  
+In that case, follow the manual installation commands below.
+```bash
+<your path>\ComfyUI_windows_portable\ComfyUI\python_embeded\python.exe -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
+<your path>\ComfyUI_windows_portable\ComfyUI\python_embeded\python.exe -m pip install cuda-python==12.8.0
+```
+Building Tensorrt Engine
+Download onnx from huggingface and build engine, save models dir.
+```bash
+<your path>\ComfyUI_windows_portable\ComfyUI\python_embeded\python.exe -u export_trt.py
+```
 
-1. Download one of the following onnx models:
-   - [rife49_ensemble_True_scale_1_sim.onnx](https://huggingface.co/yuvraj108c/rife-onnx/resolve/main/rife49_ensemble_True_scale_1_sim.onnx)
-   - [rife48_ensemble_True_scale_1_sim.onnx](https://huggingface.co/yuvraj108c/rife-onnx/resolve/main/rife48_ensemble_True_scale_1_sim.onnx)
-   - [rife47_ensemble_True_scale_1_sim.onnx](https://huggingface.co/yuvraj108c/rife-onnx/resolve/main/rife47_ensemble_True_scale_1_sim.onnx)
-2. Edit onnx/trt paths inside [export_trt.py](./export_trt.py) and build tensorrt engine by running:
-   - `python export_trt.py`
-
-3. Place the exported engine inside ComfyUI `/models/tensorrt/rife` directory
+> **Note:** Replace `<your path>` with your actual folder path (e.g., `D:\ai`).
 
 ## ☀️ Usage
 
@@ -58,8 +84,14 @@ pip install -r requirements.txt
 
 ## 🤖 Environment tested
 
-- Ubuntu 22.04 LTS, Cuda 12.4, Tensorrt 10.4.0, Python 3.10, RTX 3070 GPU
-- Windows (Not tested, but should work)
+<!--
+- Ubuntu 22.04 LTS, Cuda 12.8, Tensorrt 10.12.0.36, Python 3.11.6, RTX 40XX GPU
+-->
+- Windows 10, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.11.6, RTX 4080SUPER GPU
+- Windows 10, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
+
+## 📅 Update
+- 2025-10-26 Building Tensorrt Engine : Download onnx from huggingface and build engine, save models dir.
 
 ## 👏 Credits
 
