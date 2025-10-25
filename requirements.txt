@@ -1,5 +1,24 @@
 einops
 colored
 polygraphy
-tensorrt==10.4.0
-cuda-python
+
+# === TensorRT environment (for RTX 40XX + PyTorch 2.7.1 + cu128) ===
+tensorrt==10.12.0.36
+cuda-python==12.8.0
+
+# Note: Some environments (especially portable or offline) may fail automatic install.
+#       In that case, follow the manual installation commands below.
+#
+# --- Manual installation guide ---
+#
+# venv (activate first):
+#   python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com \
+#       tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
+#   python -m pip install cuda-python==12.8.0
+#
+# Portable:
+#   <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com \
+#       tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
+#   <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install cuda-python==12.8.0
+#
+# Note: Replace <your path> with actual path (e.g., D:\ai)
