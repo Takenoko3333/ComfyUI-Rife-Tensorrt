@@ -34,7 +34,7 @@ _Note: The following results were benchmarked on FP16 engines inside ComfyUI, us
 Navigate to the ComfyUI `/custom_nodes` directory
 
 ```bash
-git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt
+git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt.git
 ```
 venv activate first
 
@@ -57,7 +57,7 @@ python -m pip install -r export_trt.py
 
 ## 💼 Installation for Portable Environment
 ```bash
-git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt
+git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt.git
 ```
 ```bash
 cd .\ComfyUI-Rife-Tensorrt
