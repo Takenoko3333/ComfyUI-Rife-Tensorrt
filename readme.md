@@ -31,7 +31,7 @@ _Note: The following results were benchmarked on FP16 engines inside ComfyUI, us
 |  H100  | rife49_ensemble_True_scale_1_sim | 1280 x 1280  | 2 | 21 |
 
 ## 🚀 Installation for venv Environment
-Navigate to the ComfyUI `/custom_nodes` directory
+Navigate to the `/ComfyUI/custom_nodes` directory
 
 ```bash
 git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt.git
@@ -56,6 +56,8 @@ python -m pip install -r export_trt.py
 ```
 
 ## 💼 Installation for Portable Environment
+Navigate to the `/ComfyUI/custom_nodes` directory
+
 ```bash
 git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt.git
 ```
