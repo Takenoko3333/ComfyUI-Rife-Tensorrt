@@ -84,11 +84,10 @@ Download onnx from huggingface and build engine, save models dir.
 
 ## 🤖 Environment tested
 
-<!--
-- Ubuntu 22.04 LTS, Cuda 12.8, Tensorrt 10.12.0.36, Python 3.11.6, RTX 40XX GPU
--->
+- Ubuntu 22.04 LTS
 - Windows 10, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.11.6, RTX 4080SUPER GPU
 - Windows 10, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
+- Windows 11, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
 
 ## 📅 Update
 - 2025-10-26 Building Tensorrt Engine : Download onnx from huggingface and build engine, save models dir.
