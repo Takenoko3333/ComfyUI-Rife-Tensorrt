@@ -50,7 +50,7 @@ python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.
 python -m pip install cuda-python==12.8.0
 ```
 Building Tensorrt Engine
-Download onnx from huggingface and build engine, save models dir.
+The following command will automatically download onnx from huggingface, build the engine, and save the model to a directory.
 ```bash
 python -m pip install -r export_trt.py
 ```
@@ -73,7 +73,7 @@ In that case, follow the manual installation commands below.
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install cuda-python==12.8.0
 ```
 Building Tensorrt Engine
-Download onnx from huggingface and build engine, save models dir.
+The following command will automatically download onnx from huggingface, build the engine, and save the model to a directory.
 ```bash
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -u export_trt.py
 ```
