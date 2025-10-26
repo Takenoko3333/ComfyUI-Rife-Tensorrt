@@ -31,51 +31,54 @@ _Note: The following results were benchmarked on FP16 engines inside ComfyUI, us
 |  H100  | rife49_ensemble_True_scale_1_sim | 1280 x 1280  | 2 | 21 |
 
 ## 🚀 Installation for venv Environment
-Navigate to the `/ComfyUI/custom_nodes` directory
+1. Navigate to the `/ComfyUI/custom_nodes` directory
 
 ```bash
 git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt.git
 ```
-venv activate first
+2. venv activate first, Move the directory and install
 
 ```bash
 <your path>\ComfyUI\venv\Scripts\activate
 cd .\custom_nodes\ComfyUI-Rife-Tensorrt
 python -m pip install -r requirements.txt
 ```
-Some environments (especially portable) may fail automatic install.  
-In that case, follow the manual installation commands below.
+- Some environments (especially portable) may fail automatic install.<br>
+  In that case, follow the manual installation commands below.<br>
+  If no errors occur, skip it.
 ```bash
 python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
 python -m pip install cuda-python==12.8.0
 ```
-Building Tensorrt Engine
-
-The following command will automatically download onnx from huggingface, build the engine, and save the model to a directory.
+3. Building Tensorrt Engine<br>
+The following command will automatically download onnx from huggingface, build the engine, and save the model to a directory.<br>
+Processes 3 files. It will take a few minutes to complete.
 ```bash
 python -m pip install -r export_trt.py
 ```
 > **Note:** Replace `<your path>` with your actual folder path (e.g., `D:\ai`).
 
 ## 💼 Installation for Portable Environment
-Navigate to the `/ComfyUI/custom_nodes` directory
+1. Navigate to the `/ComfyUI/custom_nodes` directory
 
 ```bash
 git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt.git
 ```
+2. Move the directory and install
 ```bash
 cd .\ComfyUI-Rife-Tensorrt
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -r requirements.txt
 ```
-Some environments (especially portable) may fail automatic install.  
-In that case, follow the manual installation commands below.
+- Some environments (especially portable) may fail automatic install.<br>
+  In that case, follow the manual installation commands below.<br>
+  If no errors occur, skip it.
 ```bash
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install cuda-python==12.8.0
 ```
-Building Tensorrt Engine
-
-The following command will automatically download onnx from huggingface, build the engine, and save the model to a directory.
+3. Building Tensorrt Engine<br>
+The following command will automatically download onnx from huggingface, build the engine, and save the model to a directory.<br>
+Processes 3 files. It will take a few minutes to complete.
 ```bash
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -u export_trt.py
 ```
