@@ -54,7 +54,7 @@ python -m pip install cuda-python==12.8.0
 The following command will automatically download onnx from huggingface, build the engine, and save the model to a directory.<br>
 Processes 3 files. It will take a few minutes to complete.
 ```bash
-python -m pip install -r export_trt.py
+python -u export_trt.py
 ```
 > **Note:** Replace `<your path>` with your actual folder path (e.g., `D:\ai`).
 
