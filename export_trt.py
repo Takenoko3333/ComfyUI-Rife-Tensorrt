@@ -1,6 +1,9 @@
+from pathlib import Path
 import sys
+p = Path(__file__).resolve()
+sys.path.extend([str(p.parent), str(p.parents[2])])
+
 import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import time
 import urllib.request
 import urllib.error
@@ -127,3 +130,4 @@ if all_ok:
     run_all_sequential(models, use_fp16=True)
 else:
     print("[ABORT] Not all ONNX files were downloaded. Engine build is skipped.")
+
