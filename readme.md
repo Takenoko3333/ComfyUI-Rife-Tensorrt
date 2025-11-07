@@ -40,7 +40,7 @@ git clone https://github.com/Takenoko3333/ComfyUI-Rife-Tensorrt.git
 
 ```bash
 <your path>\ComfyUI\venv\Scripts\activate
-cd .\custom_nodes\ComfyUI-Rife-Tensorrt
+cd .\ComfyUI-Rife-Tensorrt
 python -m pip install -r requirements.txt
 ```
 - Some environments (especially portable) may fail automatic install.<br>
