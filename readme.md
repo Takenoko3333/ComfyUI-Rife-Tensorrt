@@ -97,6 +97,7 @@ Processes 3 files. It will take a few minutes to complete.
 - Windows 11, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
 
 ## 📅 Update
+- 2025-11-08 Make folder_paths importable in both venv and portable modes.
 - 2025-10-26 Building Tensorrt Engine : Download onnx from huggingface and build engine, save models dir.
 
 ## 👏 Credits
