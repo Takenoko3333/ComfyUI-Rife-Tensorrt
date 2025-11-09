@@ -12,7 +12,7 @@
 
 </div>
 
-This project provides a [TensorRT](https://github.com/NVIDIA/TensorRT) implementation of [RIFE](https://github.com/hzwer/ECCV2022-RIFE) for ultra fast frame interpolation inside ComfyUI
+-This project provides a [TensorRT](https://github.com/NVIDIA/TensorRT) implementation of [RIFE](https://github.com/hzwer/ECCV2022-RIFE) for ultra fast frame interpolation inside ComfyUI
 
 This project is licensed under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/), everyone is FREE to access, use, modify and redistribute with the same license.
 
@@ -22,17 +22,17 @@ If you like the project, please give me a star! ⭐
 
 ## ⭐ About this Repository
 
-This is a modified version forked from ComfyUI Rife TensorRT, primarily optimized for easy implementation on the RTX 4000 series.<br>
-Additionally, it describes the installation procedures for both the venv version and the portable version.<br>
-This repository installs tensorrt 10.12.0.36 and cuda-python 12.8.0.
+- This is a modified version forked from ComfyUI Rife TensorRT, primarily optimized for easy implementation on the RTX 4000 series.
+- Additionally, it describes the installation procedures for both the venv version and the portable version.
+- This repository installs tensorrt 10.12.0.36 and cuda-python 12.8.0.
 
 ## 🔔 Additional information
 
-The optimal TensorRT and cuda-python version varies depending on Python, PyTorch, CUDA, and GPU generation.<br>
-This repository is configured to install a TensorRT version that is generally suitable for the RTX 4000 series, but you may need to change the version depending on your environment.<br>
-This is just one example, but in relatively older environments, "tensorrt 10.4.0" may be an option, while in relatively newer environments, "tensorrt 10.13.3" may be an option.<br>
+- The optimal TensorRT and cuda-python version varies depending on Python, PyTorch, CUDA, and GPU generation.
+- This repository is configured to install a TensorRT version that is generally suitable for the RTX 4000 series, but you may need to change the version depending on your environment.
+- This is just one example, but in relatively older environments, "tensorrt 10.4.0" may be an option, while in relatively newer environments, "tensorrt 10.13.3" may be an option.
 Additionally, it is best to match cuda-python with the CUDA version.<br>
-If you wish to install a different version, you should modify the commands listed in this repository and the version in requirements.txt before executing them.
+- If you wish to install a different version, you should modify the commands listed in this repository and the version in requirements.txt before executing them.
 
 ## ⏱️ Performance
 
