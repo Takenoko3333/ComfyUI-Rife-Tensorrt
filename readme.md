@@ -94,6 +94,7 @@ Processes 3 files. It will take a few minutes to complete.
 - Ubuntu 22.04 LTS
 - Windows 10, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.11.6, RTX 4080SUPER GPU
 - Windows 10, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
+- Windows 10, Pytorch 2.8.0+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.10, RTX 4080SUPER GPU
 - Windows 11, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
 
 ## 📅 Update
