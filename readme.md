@@ -20,6 +20,11 @@ If you like the project, please give me a star! ⭐
 
 ---
 
+⭐About this Repository
+
+This is a modified version forked from ComfyUI Rife TensorRT, primarily optimized for easy implementation on the RTX 4000 series.<br>
+Additionally, it describes the installation procedures for both the venv version and the portable version.
+
 ## ⏱️ Performance
 
 _Note: The following results were benchmarked on FP16 engines inside ComfyUI, using 2000 frames consisting of 2 alternating similar frames, averaged 2-3 times_
@@ -98,8 +103,14 @@ Processes 3 files. It will take a few minutes to complete.
 - Windows 11, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
 
 ## 📅 Update
-- 2025-11-08 Make folder_paths importable in both venv and portable modes.
-- 2025-10-26 Building Tensorrt Engine : Download onnx from huggingface and build engine, save models dir.
+### 2025-11-10
+- Update README
+### 2025-11-08
+- Fixed the folder path to enable importing in both venv environments and portable environments
+### 2025-10-26
+- primarily optimized for easy implementation on the RTX 4000 series
+- Added Installation Guide 
+- Building Tensorrt Engine : Download onnx from huggingface and build engine, save models dir
 
 ## 👏 Credits
 
