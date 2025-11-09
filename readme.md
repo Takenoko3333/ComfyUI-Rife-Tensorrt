@@ -24,7 +24,7 @@ If you like the project, please give me a star! ⭐
 
 This is a modified version forked from ComfyUI Rife TensorRT, primarily optimized for easy implementation on the RTX 4000 series.<br>
 Additionally, it describes the installation procedures for both the venv version and the portable version.<br>
-This repository installs TensorRT 10.12.0.36.
+This repository installs tensorrt 10.12.0.36.
 
 ## 🔔 Additional information
 
